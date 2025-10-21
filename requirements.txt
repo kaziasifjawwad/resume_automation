@@ -1,0 +1,27 @@
+# --- Core web framework ---
+fastapi==0.115.2
+uvicorn==0.31.1
+
+# --- LangChain / LangGraph (compatible) ---
+langchain==0.2.12
+langgraph==0.1.14
+# Let pip resolve langchain-core automatically OR pin to the first compatible:
+langchain-core==0.2.27
+
+# --- LLM client (optional for later) ---
+openai==1.53.0
+
+# --- Document parsing ---
+python-docx==1.1.2
+
+# --- Data validation & env ---
+pydantic==2.9.2
+python-dotenv==1.0.1
+typing-extensions==4.12.2
+
+# --- Database & ORM ---
+SQLAlchemy==2.0.44
+psycopg2-binary==2.9.9   # PostgreSQL driver
+alembic==1.13.2          # (optional) migrations
+
+python-multipart==0.0.9

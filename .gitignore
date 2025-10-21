@@ -1,0 +1,79 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+*.manifest
+*.spec
+
+# --- Environment & Config ---
+.env
+*.env
+.env.*
+venv/
+env/
+ENV/
+.resumeAutomation/
+resumeAutomation/
+.idea/
+.vscode/
+*.iml
+
+# --- OS / System ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Build / Logs ---
+*.log
+logs/
+nohup.out
+*.out
+*.err
+
+# --- FastAPI / Uvicorn reload cache ---
+*.pid
+*.db
+*.sqlite3
+
+# --- Uploads / Temp Files ---
+uploads/
+tmp/
+temp/
+__temp__/
+
+# --- Test / Coverage ---
+.coverage
+htmlcov/
+.cache/
+.tox/
+pytest_cache/
+
+# --- Jupyter / Notebook ---
+.ipynb_checkpoints
+*.ipynb
+
+# --- Docker / Compose ---
+# Ignore local DB volumes or bind mounts
+data/
+volumes/
+*.tar
+*.bak
+
+# --- PyCharm / JetBrains ---
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# --- Backup / Misc ---
+*.bak
+*.swp
+*.swo
+*.orig
+
+# --- Optional: Ignore compiled models (optional safety) ---
+app/models/__pycache__/
