@@ -11,7 +11,6 @@ class JobResponse(BaseModel):
     title: str
     description: Optional[str]
     extracted_skills: Optional[List[str]]
-    file_path: Optional[str]
     created_at: datetime
 
     class Config:

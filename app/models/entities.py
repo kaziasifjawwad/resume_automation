@@ -1,6 +1,8 @@
 from sqlalchemy import Column, Integer, String, Float, TIMESTAMP, ForeignKey, ARRAY, func
 from sqlalchemy.orm import relationship
+
 from app.db.database import Base
+
 
 class JobDescription(Base):
     __tablename__ = "job_descriptions"
@@ -8,7 +10,6 @@ class JobDescription(Base):
     id = Column(Integer, primary_key=True, index=True)
     title = Column(String(255), nullable=True)
     description = Column(String, nullable=True)       # <-- add this
-    file_path = Column(String, nullable=True)         # <-- make nullable
     extracted_skills = Column(ARRAY(String), nullable=True)
     created_at = Column(TIMESTAMP, server_default=func.now())
 
