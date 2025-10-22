@@ -1,7 +1,7 @@
 from dotenv import load_dotenv
 from fastapi import FastAPI
 
-from app.api import job_routes
+from app.api import job_routes, resume_routes
 
 load_dotenv()
 app = FastAPI(
@@ -11,3 +11,4 @@ app = FastAPI(
 )
 
 app.include_router(job_routes.router)
+app.include_router(resume_routes.router)
